@@ -1,0 +1,7 @@
+{
+  "name": "nodeworkflowex2",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.comaadi308/nodeworkflowex2",
+  "logo": "https://rawgit.com/aadi308/nodeworkflowex/master/public/node.svg",
+  "keywords": ["node", "express", "static"]
+}
