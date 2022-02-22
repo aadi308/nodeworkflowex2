@@ -1,4 +1,4 @@
-FROM alpine:latest AS build
+FROM alpine:latest
 RUN apk add --no-cache nodejs npm
 
 
@@ -11,14 +11,12 @@ COPY . /app
 RUN npm install
 
 
-FROM alpine:latest
+EXPOSE 9005
 
-WORKDIR /app
-
-COPY --from=build /app ./
 
 ENTRYPOINT ["node"]
 
 CMD ["index.js"]
+
 
 
