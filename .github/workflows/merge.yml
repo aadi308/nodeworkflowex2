@@ -20,8 +20,8 @@ jobs:
     - name: Nightly Merge
       uses: robotology/gh-action-nightly-merge@v1.3.1
       with:
-        stable_branch: 'develop'
-        development_branch: 'main'
+        stable_branch: 'main'
+        development_branch: 'develop'
         allow_ff: false
         allow_forks: true
       env:
