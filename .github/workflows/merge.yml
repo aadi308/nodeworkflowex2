@@ -6,7 +6,7 @@ name: merge
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, develop ]
+    branches: [ develop ]
   
 jobs:
   nightly-merge:
@@ -20,9 +20,9 @@ jobs:
     - name: Nightly Merge
       uses: robotology/gh-action-nightly-merge@v1.3.1
       with:
-        stable_branch: 'main'
-        development_branch: 'develop'
+        stable_branch: 'develop'
+        development_branch: 'main'
         allow_ff: false
         allow_forks: true
       env:
-        GITHUB_TOKEN: ${{ secrets.aaditya }}
+        GITHUB_TOKEN: ${{ secrets.MYTOKEN }}
