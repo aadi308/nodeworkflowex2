@@ -25,4 +25,4 @@ jobs:
             
              sudo docker login -u $USERNAME -p $PASSWORD
              sudo docker build -t nodetestex2:latest .
-             sudo docker run -it -d -p 9001:9005 nodetestex2
+             sudo docker run -it -d -p 9006:9005 nodetestex2
