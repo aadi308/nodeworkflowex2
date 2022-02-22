@@ -1,0 +1,29 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+      
+
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - name: build_push_tag of main
+     
+      
+      env:      
+       PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+       USERNAME: ${{ secrets.DOCKER_USERNAME }}  
+      
+     
+      run: |
+            
+             docker login -u $USERNAME -p $PASSWORD
+             docker build -t testnodeex:latest .
+             docker run -it -d -p 9004:9005 testnodeex
