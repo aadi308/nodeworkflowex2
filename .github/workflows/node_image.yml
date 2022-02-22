@@ -25,5 +25,5 @@ jobs:
       run: |
             
              sudo docker login -u $USERNAME -p $PASSWORD
-             sudo docker build -t testnodeex:latest .
-             sudo docker run -it -d -p 9004:9005 testnodeex
+             sudo docker build -t testnodeex2:latest .
+             sudo docker run -it -d -p 9004:9005 testnodeex2
