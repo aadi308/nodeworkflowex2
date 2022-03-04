@@ -19,4 +19,6 @@ git push origin develop
 
 git pull
 #run on cli it pull command to local
+  
+  hello
 
