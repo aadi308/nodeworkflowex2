@@ -7,11 +7,11 @@ pipeline {
             }
             steps {
                 sh """
-                echo "Building Artifact from Main branch testing"
+                echo "Building Artifact from Main branch tested"
                 """
  
                 sh """
-                echo "Deploying Code from Main branch testing"
+                echo "Deploying Code from Main branch tested"
                 """
             }
         }
@@ -21,10 +21,10 @@ pipeline {
             }
             steps {
                 sh """
-                echo "Building Artifact from Develop branch testing"
+                echo "Building Artifact from Develop branch tested"
                 """
                 sh """
-                echo "Deploying Code from Develop branch testing"
+                echo "Deploying Code from Develop branch tested"
                 """
            }
         }
